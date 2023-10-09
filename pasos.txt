@@ -1,0 +1,16 @@
+Alumno: Montellano Marcos
+
+Parcial - Docker Swarm
+
+1)- Primero cree una carpeta node
+2)- Luego instale express y axios
+3)- Hice un servidor basico con una peticion a la api y solo muestro los datos que me interesan
+4)- Creo el archivo Dockerfile asi puedo configurar la imagen
+5)- Luego fuera de esta carpeta creo el archivo docker-compose.yml para configurar mi contenedor
+7)- Despues de todo esto entro a la carpeta node y hago este comando
+    docer build . -t "parcial_node"
+8)- Despues de esto salgo de la carpeta node y utilizo estos comando
+    docker swarm init
+    docker stack deploy -c docker-compose.yml "examen node"
+
+Listo :)
