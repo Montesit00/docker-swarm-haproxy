@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    image: parcial_node
+    deploy:
+      replicas: 8
+    ports:
+      - "8000:3000"
